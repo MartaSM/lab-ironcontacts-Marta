@@ -1,0 +1,10 @@
+
+<div class="container" *ngFor="let contact of contacts">
+  <ul>
+    <li>{{contact.name}}</li>
+    <li>email: {{contact.email}}</li>
+    <li>phoneNumber: {{contact.phoneNumber}}</li>
+  </ul>
+  <img [src]="contact.image" alt="contact-image">
+</div>
+
