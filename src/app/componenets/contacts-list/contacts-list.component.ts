@@ -8,4 +8,14 @@ import {Contact} from '../../shared/models/contact.model';
 })
 export class ContactsListComponent{
 contacts: Array<Contact> = contactsList;
+newContact: Contact = new Contact;
+
+addContact():void {
+  this.contacts.push(this.newContact);
+  this.newContact = new Contact();
+
+  }
+  // add contact to contacts list
+  // clear inputs
+
 };
